@@ -30,6 +30,6 @@ cp ./kapacitor.conf /etc/kapacitor/kapacitor.conf
 cp ./telegraf.conf /etc/telegraf/telegraf.conf
 
 # Restart all processes
-systemctl restart influxdb
-systemctl restart kapacitor
-systemctl restart telegraf
+sudo systemctl restart influxdb
+sudo systemctl restart kapacitor
+sudo systemctl restart telegraf
