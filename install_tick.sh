@@ -22,4 +22,14 @@ wget https://dl.influxdata.com/chronograf/releases/chronograf_1.3.3.1_amd64.deb
 sudo dpkg -i chronograf_1.3.3.1_amd64.deb
 
 # Delete the debs after installation
-# sudo rm *.deb
+sudo rm *.deb
+
+# Copy config files to proper locations and then restart 
+cp ./influxdb.conf /etc/influxdb/influxdb.conf
+cp ./kapacitor.conf /etc/kapacitor/kapacitor.conf
+cp ./telegraf.conf /etc/telegraf/telegraf.conf
+
+# Restart all processes
+systemctl restart influxdb
+systemctl restart kapacitor
+systemctl restart telegraf
