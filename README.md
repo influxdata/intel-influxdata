@@ -1,6 +1,6 @@
 # Intel // InfluxData
 
-This repo contains configuration and an installation script for the Intel IoT Gateway. It downloads the latest version of InfluxDB, Kapacitor, Chronograf and Telegraf from our repository and installs and configures them. To install just clone down this repo:
+This repo contains configuration and an installation script for the Intel IoT Gateway. It downloads the latest version of InfluxDB, Kapacitor, Chronograf and Telegraf from our repositories and installs and configures them. To install, just clone down this repo:
 
 ```
 $ git clone git@github.com:influxdata/intel-influxdata.git && cd intel-influxdata
