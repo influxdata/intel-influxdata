@@ -1,3 +1,4 @@
 stream
   |from()
   |influxDBOut("cloudInflux")
+    .create()
