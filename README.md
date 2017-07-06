@@ -13,3 +13,5 @@ Once the script runs, Chronograf will be available at localhost:8888. Use the UI
 $ kapacitor define shipToCloud -dbrp telegraf.autogen -dbrp mydb.myrp -tick toCloud.tick -type stream
 $ kapacitor enable shipToCloud
 ```
+
+![architecture](./arch.png)
