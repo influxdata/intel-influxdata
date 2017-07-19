@@ -1,4 +1,5 @@
 stream
   |from()
-  |influxDBOut("cloudInflux")
+  |influxDBOut()
+    .cluster('cloudInflux')
     .create()
